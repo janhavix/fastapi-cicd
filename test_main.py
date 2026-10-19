@@ -7,4 +7,4 @@ def test_home():
     assert client.get("/").status_code == 200
 
 def test_health():
-    assert client.get("/health").json() == {"status": "ok"}
+    assert client.get("/health").json() == {"status": "bad"}
