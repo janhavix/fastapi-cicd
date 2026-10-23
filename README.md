@@ -1,5 +1,7 @@
 # FastAPI CI/CD Pipeline
 
+![CI](https://github.com/janhavix/fastapi-cicd/actions/workflows/ci.yml/badge.svg)
+
 A small FastAPI app that is tested, built into a Docker image, and deployed automatically by a Jenkins pipeline every time code is pushed to GitHub.
 
 ## What it does
@@ -7,6 +9,7 @@ A small FastAPI app that is tested, built into a Docker image, and deployed auto
 - Pytest tests for both endpoints
 - Dockerfile that packages the app so it runs the same on any machine
 - Jenkins pipeline with 4 stages: Checkout, Install and Test, Build Image, Deploy
+- GitHub Actions workflow that runs the tests and builds the Docker image on every push
 
 ## Tech
 Python, FastAPI, Pytest, Docker, Jenkins, Git, GitHub
